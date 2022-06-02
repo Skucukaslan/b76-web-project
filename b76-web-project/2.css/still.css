@@ -1,0 +1,16 @@
+p{
+    color: brown;
+    text-align: left;
+    font-family: Arial;
+}
+h1{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2.ortala{
+    color: rgb(13, 14, 13);
+    text-align: left;
+    font-family: Arial;
+}

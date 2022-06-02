@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <input type="number" id="txtBaslangic" min="0" placeholder="Baslangic sayisini giriniz">
+    <input type="number" id="txtHedef" min="0" placeholder="Hedefi giriniz">
+
+    <input type="button" value="Hesapla" onclick="hesapla()">
+    <h3 id="sonuc"></h3>
+
+    <script>
+        function hesapla(){
+            // 100 + 101 + ...n >= 2000
+            // 100-200 ararsındaki sayıların toplam
+            // Genel toplamı 2000'e ulaştıran kaç sayı olduğunu ekrana yaz
+            let baslangic = Number(document.querySelector("#txtBaslangic").value);
+            let hedef = Number(document.querySelector("#txtHedef").value);
+
+            let toplam = 0;
+            let adet = 0;
+
+            while(toplam<hedef){
+                toplam +=baslangic;
+                baslangic++;
+                adet++;
+            }
+
+            document.querySelector("#sonuc").innerText = `Toplamı ${toplam } degerine ulastiran ${adet} adet sayi var`;
+
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>
